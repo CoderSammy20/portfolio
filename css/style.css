@@ -42,7 +42,7 @@ header {
   padding: 1px 355px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-ul {
+.Head {
   display: flex;
   gap: 20px;
   list-style-type: none;
@@ -204,4 +204,136 @@ ul {
     display: flex;
     gap: 15px;
     margin-top: 20px;
+}
+
+.about_me{
+  font-family: monospace;
+  margin:  0 auto;
+  max-width: 450px;
+  flex: 1;
+}
+
+
+.Slashes{
+  color: rgb(114, 112, 112);
+}
+
+#UeM {
+  color: rgb(66 , 175, 162);
+}
+
+#AbM {
+  color: white;
+}
+
+.AbM_desc{
+  text-decoration: none;
+  font-size: 15.5px;
+  color: rgb(128, 126, 126);
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.li_AbM {
+  margin-bottom: 16px;
+}
+
+.status-window {
+  min-height: 150px;
+  max-height: 200px;
+  min-width: 400px;
+  max-width: 420px;
+  margin: 60px auto;
+  background-color: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+  padding: 8px 24px 20px 24px;
+}
+
+#status-row{
+  justify-content: space-between;
+  display: flex;
+  font-size: 15px;
+  color: #8891a1;
+  margin: 10px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+  margin: 0;
+}
+
+#status{
+  color: #4ccdbd;
+}
+
+#stack-row{
+  justify-content: space-between;
+  display: flex;
+  font-size: 15px;
+  color: #8891a1;
+  margin: 10px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+  margin: 0;
+}
+
+#stack{
+  color: #4ccdbd;
+}
+
+#level-row{
+  justify-content: space-between;
+  display: flex;
+  font-size: 15px;
+  color: #8891a1;
+  margin: 10px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+  margin: 0;
+}
+
+#level{
+  color: #4ccdbd;
+}
+
+#standort-row{
+  justify-content: space-between;
+  display: flex;
+  font-size: 15px;
+  color: #8891a1;
+  margin: 10px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+  margin: 0;
+}
+
+#standort{
+  color: #4ccdbd;
+}
+
+#answertime-row{
+  justify-content: space-between;
+  display: flex;
+  font-size: 15px;
+  color: #8891a1;
+  margin: 10px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+  margin: 0;
+}
+
+#answertime{
+  color: #4ccdbd;
+}
+
+.aboutlayout{
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 200px;
 }

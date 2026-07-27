@@ -5,12 +5,7 @@ body {
 
   background-image: 
     linear-gradient(to bottom, transparent 30%, rgb(11, 14, 20) 90%),
-
-
-   
     radial-gradient(circle at center 20%, transparent 5%, rgb(11, 14, 20) 70%),
-    
-
     repeating-linear-gradient(
       to bottom,
       transparent 0px,
@@ -18,7 +13,6 @@ body {
       rgba(255, 255, 255, 0.08) 39px,
       rgba(255, 255, 255, 0.08) 40px
     ),
-    
     repeating-linear-gradient(
       to right,
       transparent 0px,
@@ -33,46 +27,63 @@ body {
     40px 40px,
     40px 40px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   font-family: Monospace;
   background-color: rgb(11, 14, 20);
   color: rgb(114, 112, 112);
-  padding: 1px 355px;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: static !important;
 }
+
 .Head {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  font-size: 9px;
+  font-size: 15px;
 }
+
+.Head a {
+    color: rgb(114, 112, 112);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.Head a:hover {
+    color: orange;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 #Tname {
   color: rgb(124, 122, 122);
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 #O1 {
   color: orange;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 #O2 {
   color: orange;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
-
-
 
 .terminal-window {
   width: 100%;
   max-width: 500px;
-  margin: 60px auto 0 auto;
   background-color: #161b22;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -82,7 +93,6 @@ header {
   margin: 155px auto 0 auto;
 }
 
-
 .terminal-header {
   background-color: #0f1319;
   padding: 10px 15px;
@@ -90,7 +100,6 @@ header {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 
 .terminal-dots {
   display: flex;
@@ -113,7 +122,6 @@ header {
   font-size: 12px;
 }
 
-
 .terminal-body {
   padding: 16px 20px;
   color: #c9d1d9;
@@ -125,7 +133,6 @@ header {
 .terminal-body p {
   margin: 5px 0;
 }
-
 
 .prompt {
   color: #3fb950; 
@@ -139,47 +146,40 @@ header {
 }
 
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
-.hero-content{
+.hero-content {
     color: white;
     max-width: 450px;
     margin: 40px auto 0 auto;
     font-family: Monospace;
 }
 
-.highlight{
+.highlight {
     color: orange;
     font-style: monospace;
 }
 
-.hero_desc{
+.hero_desc {
     color: rgb(114, 112, 112);
     font-style: monospace;
 }
 
-
-
-.highlight2{
+.highlight2 {
     color: rgb(15, 103, 218);
     font-weight: bold;
     font-style: monospace;
 }
-.highlight3{
+
+.highlight3 {
     color: rgb(255, 166, 0);
     font-weight: bold;
     font-style: monospace;
 }
 
-
-.btn{
+.btn {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -188,33 +188,33 @@ header {
     display: inline-block;
 }
 
-.btn_primary{
+.btn_primary {
     background-color: orange;
     color: black;
     border: 2px solid black;
 }
 
-.btn_secondary{
+.btn_secondary {
     background-color: transparent;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.hero_btns{
+.hero_btns {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-.about_me{
+.about_me {
   font-family: monospace;
-  margin:  0 auto;
-  max-width: 450px;
-  flex: 1;
+  flex: 1; 
+  min-width: 0; 
+  margin: 0;
+  max-width: 520px;
 }
 
-
-.Slashes{
+.Slashes {
   color: rgb(114, 112, 112);
 }
 
@@ -226,7 +226,7 @@ header {
   color: white;
 }
 
-.AbM_desc{
+.AbM_desc {
   text-decoration: none;
   font-size: 15.5px;
   color: rgb(128, 126, 126);
@@ -242,11 +242,10 @@ header {
 }
 
 .status-window {
+  width: 400px; 
   min-height: 150px;
-  max-height: 200px;
-  min-width: 400px;
-  max-width: 420px;
-  margin: 60px auto;
+  margin: 0; 
+  margin-top: 85px;
   background-color: #161b22;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -254,86 +253,156 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   font-family: monospace;
   padding: 8px 24px 20px 24px;
+  box-sizing: border-box;
+  flex-shrink: 0; 
 }
 
-#status-row{
+#status-row, #stack-row, #level-row, #standort-row, #answertime-row {
   justify-content: space-between;
   display: flex;
   font-size: 15px;
   color: #8891a1;
-  margin: 10px;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
-    padding: 12px 0;
+  padding: 12px 0;
   margin: 0;
 }
 
-#status{
+#status, #stack, #level, #standort, #answertime {
   color: #4ccdbd;
 }
 
-#stack-row{
-  justify-content: space-between;
+.about-section {
   display: flex;
-  font-size: 15px;
-  color: #8891a1;
-  margin: 10px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
-    padding: 12px 0;
-  margin: 0;
-}
-
-#stack{
-  color: #4ccdbd;
-}
-
-#level-row{
-  justify-content: space-between;
-  display: flex;
-  font-size: 15px;
-  color: #8891a1;
-  margin: 10px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
-    padding: 12px 0;
-  margin: 0;
-}
-
-#level{
-  color: #4ccdbd;
-}
-
-#standort-row{
-  justify-content: space-between;
-  display: flex;
-  font-size: 15px;
-  color: #8891a1;
-  margin: 10px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
-    padding: 12px 0;
-  margin: 0;
-}
-
-#standort{
-  color: #4ccdbd;
-}
-
-#answertime-row{
-  justify-content: space-between;
-  display: flex;
-  font-size: 15px;
-  color: #8891a1;
-  margin: 10px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
-    padding: 12px 0;
-  margin: 0;
-}
-
-#answertime{
-  color: #4ccdbd;
-}
-
-.aboutlayout{
-  display: flex;
-  gap: 10px;
+  flex-direction: row;
   align-items: flex-start;
+  gap: 50px;
   margin-top: 200px;
+  width: 100%;
 }
+
+
+
+.skills-section {
+    width: 100%;
+    max-width: 900px;
+    font-family: monospace;
+    align-self: flex-start;
+}
+
+#SKI {
+  color: rgb(66 , 175, 162);
+  font-weight: bold;
+  font-style: monospace;
+}
+
+#skijson {
+  color: white;
+  font-weight: bold;
+  font-style: monospace;
+}
+
+.layout1 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten nebeneinander */
+    gap: 22px;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.skill-card {
+    background: #161b22;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    padding: 28px 30px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 10px;
+    margin-bottom: 24px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-status {
+    color: #8b949e;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    white-space: nowrap; 
+}
+
+.skill-track {
+    width: 100%;
+    height: 12px;
+    background: #0f1319;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg,#d18b2b,#ffb347);
+    border-radius: 100px;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 120px;
+  }
+
+  .about_me {
+    width: 90%;
+    max-width: 450px;
+  }
+
+  .status-window {
+    max-width: none;
+    height: auto;
+  }
+
+  .skills-section {
+    width: 90%;
+    max-width: 450px;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .Head {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+    .skills-box {
+        grid-template-columns: 1fr; 
+    }
+}
+

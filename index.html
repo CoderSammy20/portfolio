@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +10,14 @@
     <header>
       <p id="O1"><<span id="Tname">Sam</span><span id="O2">Tech/></span></p>
       <ul class="Head">
-        <li>about</li>
-        <li>skills</li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
         <li>projects</li>
         <li>debug_break</li>
         <li>contact</li>
       </ul>
     </header>
+
     <div class="terminal-window">
       <div class="terminal-header">
         <div class="terminal-dots">
@@ -49,55 +50,108 @@
         <a href="#contact" class="btn btn_secondary">Kontakt aufnehmen</a>
       </div>
     </section>
-    <div class="aboutlayout">
-    <section class="about_me">
-      <p id="UeM">01 · Über mich</p>
-      <h1 class="Slashes">
-        //<span id="blank"> </span><span id="AbM">about_me</span>
-      </h1>
-      <ul class="AbM_desc">
-        <li class="li_AbM">
-          Ich bin Hobby-Entwickler und gleichzeitig selbstständig unterwegs —
-          mit dem Ziel, aus Code echten Mehrwert für Kunden zu machen. Aktuell
-          lerne ich aktiv JavaScript und Python und baue nebenbei kleine,
-          funktionierende Projekte.
-        </li>
-        <li class="li_AbM">
-          Diese Seite hier ist selbst so ein Projekt: eine Visitenkarte,
-          komplett von Hand mit HTML, CSS und Vanilla-JS gebaut — kein
-          Framework, nur die Grundlagen, dafür sauber umgesetzt.
-        </li>
-        <li class="li_AbM">
-          Ich suche Gelegenheiten, an echten Projekten zu wachsen — ob kleines
-          Website-Update oder ein Skript, das eine lästige Aufgabe
-          automatisiert.
-        </li>
-      </ul>
-    </section>
 
-    <section class="status-window">
-        <div id="status-row">
-          <span>status</span>
-          <span id="status">verfügbar für Projekte</span>
+    <div class="layout1">
+      <section id="about" class="about-section">
+        <section class="about_me">
+          <p id="UeM">01 · ÜBER MICH</p>
+          <h1 class="Slashes">
+            //<span id="blank"> </span><span id="AbM">about_me</span>
+          </h1>
+          <ul class="AbM_desc">
+            <li class="li_AbM">
+              Ich bin Hobby-Entwickler und gleichzeitig selbstständig unterwegs
+              — mit dem Ziel, aus Code echten Mehrwert für Kunden zu machen.
+              Aktuell lerne ich aktiv JavaScript und Python und baue nebenbei
+              kleine, funktionierende Projekte.
+            </li>
+            <li class="li_AbM">
+              Diese Seite hier ist selbst so ein Projekt: eine Visitenkarte,
+              komplett von Hand mit HTML, CSS und Vanilla-JS gebaut — kein
+              Framework, nur die Grundlagen, dafür sauber umgesetzt.
+            </li>
+            <li class="li_AbM">
+              Ich suche Gelegenheiten, an echten Projekten zu wachsen — ob
+              kleines Website-Update oder ein Skript, das eine lästige Aufgabe
+              automatisiert.
+            </li>
+          </ul>
+        </section>
+
+        <section class="status-window">
+          <div id="status-row">
+            <span>status</span>
+            <span id="status">verfügbar für Projekte</span>
+          </div>
+          <div id="stack-row">
+            <span>stack</span>
+            <span id="stack">JS · HTML · CSS · Python</span>
+          </div>
+          <div id="level-row">
+            <span>level</span>
+            <span id="level">learning_in_public</span>
+          </div>
+          <div id="standort-row">
+            <span>standort</span>
+            <span id="standort">remote-friendly</span>
+          </div>
+          <div id="answertime-row">
+            <span>antwortzeit</span>
+            <span id="answertime">&lt; 24h</span>
+          </div>
+        </section>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <p id="SKI">02 · SKILLS</p>
+        <h1 class="Slashes">
+          //<span id="blank"> </span><span id="skijson">skills.json</span>
+        </h1>
+        
+        <div class="skills-box">
+          <div class="skill-card">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span class="skill-status">lernt aktiv</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:55%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span>HTML & CSS</span>
+              <span class="skill-status">solide Basis</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:70%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span>Python</span>
+              <span class="skill-status">lernt aktiv</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:45%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span>Debugging</span>
+              <span class="skill-status">übt täglich</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:50%;"></div>
+            </div>
+          </div>
         </div>
-        <div id="stack-row">
-          <span>stack</span>
-          <span id="stack">JS · HTML · CSS · Python</span>
-        </div>
-        <div id="level-row">
-          <span>level</span>
-          <span id="level">learning_in_public</span>
-        </div>
-        <div id="standort-row">
-          <span>standort</span>
-          <span id="standort" >remote-freundlich</span>
-        </div>
-        <div id="answertime-row">
-          <span>antwortzeit</span>
-          <span id="answertime">< 24h</span>
-        </div>
-    </section>
+      </section>
     </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

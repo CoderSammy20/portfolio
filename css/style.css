@@ -58,6 +58,10 @@ header {
     color: orange;
 }
 
+.Head a:checked{
+  color: rgb(114, 112, 112);
+} 
+
 html {
     scroll-behavior: smooth;
 }
@@ -406,3 +410,92 @@ html {
     }
 }
 
+.Hlink{
+  text-decoration: none;
+}
+
+.Ilink{
+  text-decoration: none;
+}
+
+.li_imp {
+    color: rgb(114, 112, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    list-style: none;    
+    gap: 10px;           
+    margin-top: 20px;  
+    font-size: 35px;  
+    margin-left: -45px;
+    font-weight: bold;
+    font-style: monospace; 
+}
+
+.i-content{
+    align-items: center;
+    font-weight: bold;
+    font-style: monospace; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#iTech{
+  color: rgb(15, 103, 218);
+  font-weight: bold;
+  font-style: monospace; 
+}
+
+#In{
+    font-size: 1rem;
+    color:  rgb(114, 112, 112);
+    opacity: 0.8;
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.legal-contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    color: #ffffff;
+    margin-left: -45px;
+}
+
+.contact-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.legal-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.85;
+    text-align: center;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.legal-contact a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.Head a, .Ilink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.Head a:hover, .Ilink:hover {
+    color: #ff9900; 
+    cursor: pointer;
+}

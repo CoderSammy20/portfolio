@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sam Tech</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script src="js/maintenance.js"></script>
   </head>
   <body>
+    
+
     <header>
       <a class="Hlink" href="https://sam-tech.tech/">
-      <p id="O1"><<span id="Tname">Sam</span><span id="O2">Tech/></span></p>
+        <p id="O1">&lt;<span id="Tname">Sam</span><span id="O2">Tech/&gt;</span></p>
       </a>
       <ul class="Head">
         <li><a href="#about">about</a></li>
         <li><a href="#skills">skills</a></li>
-        <li>projects</li>
+        <li><a href="#projects">projects</a></li>
         <li>debug_break</li>
         <li>contact</li>
         <li><a class="Ilink" href="impressum/">impressum</a></li>
@@ -45,7 +49,7 @@
       <p class="hero_desc">
         Hobby-Entwickler und Gründer von
         <span class="highlight2">Sam Tech</span> – Ich baue mit JavaScript,
-        HTML, CSS & Python Dinge, die funktionieren und Spaß machen. Auch Ihre
+        HTML, CSS &amp; Python Dinge, die funktionieren und Spaß machen. Auch Ihre
         Projektidee kann ich <span class="highlight3">verwirklichen!</span>
       </p>
       <div class="hero_btns">
@@ -110,7 +114,7 @@
         <h1 class="Slashes">
           //<span id="blank"> </span><span id="skijson">skills.json</span>
         </h1>
-        
+
         <div class="skills-box">
           <div class="skill-card">
             <div class="skill-header">
@@ -118,17 +122,17 @@
               <span class="skill-status">lernt aktiv</span>
             </div>
             <div class="skill-track">
-              <div class="skill-fill" style="width:55%;"></div>
+              <div class="skill-fill" style="width: 55%"></div>
             </div>
           </div>
 
           <div class="skill-card">
             <div class="skill-header">
-              <span>HTML & CSS</span>
+              <span>HTML &amp; CSS</span>
               <span class="skill-status">solide Basis</span>
             </div>
             <div class="skill-track">
-              <div class="skill-fill" style="width:70%;"></div>
+              <div class="skill-fill" style="width: 70%"></div>
             </div>
           </div>
 
@@ -138,7 +142,7 @@
               <span class="skill-status">lernt aktiv</span>
             </div>
             <div class="skill-track">
-              <div class="skill-fill" style="width:45%;"></div>
+              <div class="skill-fill" style="width: 45%"></div>
             </div>
           </div>
 
@@ -148,11 +152,94 @@
               <span class="skill-status">übt täglich</span>
             </div>
             <div class="skill-track">
-              <div class="skill-fill" style="width:50%;"></div>
+              <div class="skill-fill" style="width: 50%"></div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="projects" class="projects-section">
+        <p id="PRO">03 · Projekte</p>
+        <h1 class="Slashes">
+          //<span id="blank"> </span><span id="proj">projects/</span>
+        </h1>
+
+        <div class="projects-grid">
+          <div class="content-box">
+            <div class="box-header">portfolio.html</div>
+            <div class="box-body">
+              <div class="titel">Diese Website</div>
+              <p>
+                Diese Seite hier — von Grund auf mit HTML, CSS und JS gebaut,
+                inklusive Minispiel.
+              </p>
+            </div>
+            <div class="box-footer">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <div class="box-header">vesper_core.js</div>
+            <div class="box-body">
+              <div class="titel">Der Vesper Bot</div>
+              <p>
+                Vesper ist ein KI Assistent den ich aus Langeweile angefangen
+                habe zu programmieren. Inspiriert wurde ich durch J.A.R.V.I.S
+                von Iron Man.
+              </p>
+            </div>
+            <div class="box-footer">
+              <span class="tag">JS</span>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <div class="box-header">project_03</div>
+            <div class="box-body">
+              <div class="titel">N/A</div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </p>
+            </div>
+            <div class="box-footer">
+              <span class="tag">JS</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">PYTHON</span>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <div class="box-header">project_04</div>
+            <div class="box-body">
+              <div class="titel">N/A</div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </p>
+            </div>
+            <div class="box-footer">
+              <span class="tag">JS</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">PYTHON</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="game" class="game-section">
+        <p id="GAM">04 · Pause</p>
+        <h1 class="Slashes">
+          //<span id="blank"> </span><span id="gam">debug_break/</span>
+        </h1>
     </div>
 
     <script src="js/script.js"></script>

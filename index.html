@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/overlays.css" />
     <script src="js/maintenance.js"></script>
+    <script src="js/debug_break.js" defer></script>
   </head>
   <body>
-    
-
     <header>
       <a class="Hlink" href="https://sam-tech.tech/">
         <p id="O1">&lt;<span id="Tname">Sam</span><span id="O2">Tech/&gt;</span></p>
       </a>
       <ul class="Head">
+        <li><a href="#behind">behind the code</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#skills">skills</a></li>
         <li><a href="#projects">projects</a></li>
-        <li>debug_break</li>
-        <li>contact</li>
+        <li><a href="#game">debug_break</a></li>
+        <li><a href="#kontakt">contact</a></li>
         <li><a class="Ilink" href="impressum/">impressum</a></li>
       </ul>
     </header>
@@ -38,7 +38,7 @@
 
       <div class="terminal-body">
         <p><span class="prompt">$</span> whoami</p>
-        <p>&gt; Sammy — Entwickler &amp; Selbstständiger</p>
+        <p>&gt; Sammy — Entwickler &amp; FIAE-Bewerber</p>
         <p>&gt; Lernt gerade: JavaScript, Python</p>
         <p><span class="prompt">$</span> <span class="cursor">▌</span></p>
       </div>
@@ -48,14 +48,13 @@
       <h1>Hi, ich bin <span class="highlight">Sammy</span>.</h1>
 
       <p class="hero_desc">
-        Hobby-Entwickler und Gründer von
-        <span class="highlight2">Sam Tech</span> – Ich baue mit JavaScript,
-        HTML, CSS &amp; Python Dinge, die funktionieren und Spaß machen. Auch Ihre
-        Projektidee kann ich <span class="highlight3">verwirklichen!</span>
+        Hobby-Entwickler auf der Suche nach einem Ausbildungsplatz als
+        <span class="highlight2">Fachinformatiker für Anwendungsentwicklung!</span>
+        Ich baue mit <span class="highlight3">JavaScript, HTML, CSS &amp; Python </span> eigene Bots, Tools und Web-Projekte, die funktionieren und Spaß machen.
       </p>
       <div class="hero_btns">
         <a href="#projects" class="btn btn_primary">Projekte ansehen</a>
-        <a href="#contact" class="btn btn_secondary">Kontakt aufnehmen</a>
+        <a href="#kontakt" class="btn btn_secondary">Kontakt aufnehmen</a>
       </div>
     </section>
 
@@ -68,8 +67,8 @@
           </h1>
           <ul class="AbM_desc">
             <li class="li_AbM">
-              Ich bin Hobby-Entwickler und gleichzeitig selbstständig unterwegs
-              — mit dem Ziel, aus Code echten Mehrwert für Kunden zu machen.
+              Ich bin Hobby-Entwickler
+              — mit dem Ziel, aus Code echten Mehrwert für Familie und Freunde zu machen.
               Aktuell lerne ich aktiv JavaScript und Python und baue nebenbei
               kleine, funktionierende Projekte.
             </li>
@@ -79,9 +78,8 @@
               Framework, nur die Grundlagen, dafür sauber umgesetzt.
             </li>
             <li class="li_AbM">
-              Ich suche Gelegenheiten, an echten Projekten zu wachsen — ob
-              kleines Website-Update oder ein Skript, das eine lästige Aufgabe
-              automatisiert.
+              Ich suche jeden Tag Gelegenheiten, mein Wissen und Intresse am Coding
+              ins Berufleben einzubringen und Neues zu lernen.
             </li>
           </ul>
         </section>
@@ -89,7 +87,7 @@
         <section class="status-window">
           <div id="status-row">
             <span>status</span>
-            <span id="status">verfügbar für Projekte</span>
+            <span id="status">learning something new every day</span>
           </div>
           <div id="stack-row">
             <span>stack</span>
@@ -236,11 +234,93 @@
           </div>
         </div>
       </section>
+
       <section id="game" class="game-section">
         <p id="GAM">04 · Pause</p>
         <h1 class="Slashes">
           //<span id="blank"> </span><span id="gam">debug_break/</span>
         </h1>
+        <div class="debug-game-card">
+          <div class="debug-topbar">
+            <div class="debug-stat">
+              <span>Zeit:</span>
+              <strong id="debug-time">20s</strong>
+            </div>
+            <div class="debug-stat">
+              <span>Bugs gefixt:</span>
+              <strong id="debug-fixed">0</strong>
+            </div>
+          </div>
+          <div id="debug-stage" class="debug-stage">
+            <div id="debug-overlay" class="debug-overlay">
+              <div id="debug-overlay-heading" class="debug-heading">
+                <span class="debug-bug-icon" aria-hidden="true">🪲</span>
+                <span class="db">Debug Break/</span>
+              </div>
+              <p id="debug-overlay-text" class="debug-subtext">
+                20 Sekunden Zeit, um so viele Bugs wie möglich wegzuklicken, bevor sie den Code übernehmen.
+              </p>
+              <button type="button" id="debug-start-btn" class="debug-btn">Spiel starten</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="behind" class="behind-section">
+        <p id="BE">05 · Behind the Code</p>
+        <h1 class="Slashes">
+          //<span id="blank"> </span><span id="be">Behind the Code/</span>
+        </h1>
+        <ul class="BE_desc">
+          <li class="li_BE">
+            Diese Seite ist kein fertiges Template oder Baukasten-Projekt –
+            rund 90 % des Codes sind komplett handgeschrieben.
+            Statt Lösungen einfach zu kopieren, wurden alle Strukturen,
+            Designs und Funktionen von Grund auf selbst erarbeitet und umgesetzt.
+          </li>
+          <li class="li_BE">
+            Frontend: Reines HTML, CSS und JavaScript –
+            bewusst ohne schwere Frameworks oder Baukästen umgesetzt.
+            Der Fokus liegt auf modularer Struktur, sauberem Code,
+            flüssigen Interaktionen sowie einem konsistenten Responsive Design für Desktop und Mobile.
+          </li>
+          <li class="li_BE">
+            Architektur &amp; Security: Geschützte Bereiche und Zugangskontrollen laufen nicht unsicher über den Browser-Code,
+            sondern werden serverseitig über eine eigene API mit gehashten Zugangsdaten,
+            Rate-Limiting und Zeitstempel-Logging abgesichert.
+          </li>
+        </ul>
+      </section>
+
+      <section id="kontakt" class="contact-section">
+        <span id="KON">06 · </span><span id="kon">KONTAKT</span>
+        <h2><span class="Slashes">//</span> send_message()</h2>
+
+        <div class="content-box contact-box">
+          <div class="box-header">contact_form.sh</div>
+          <form id="contact-form" class="box-body contact-form">
+            <div class="c-row">
+              <label for="c-name"><span class="prompt">$</span> name</label>
+              <input type="text" id="c-name" name="name" placeholder="Wie heißt du?" required />
+            </div>
+
+            <div class="c-row">
+              <label for="c-email"><span class="prompt">$</span> email</label>
+              <input type="email" id="c-email" name="email" placeholder="deine@email.de" required />
+            </div>
+
+            <div class="c-row">
+              <label for="c-message"><span class="prompt">$</span> nachricht</label>
+              <textarea id="c-message" name="message" rows="4" placeholder="Worum geht's?" required></textarea>
+            </div>
+
+            <div class="contact-actions">
+              <button type="submit" class="btn btn_primary">Nachricht senden</button>
+              <span id="c-status" class="c-status"></span>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
 
     <script src="js/script.js"></script>

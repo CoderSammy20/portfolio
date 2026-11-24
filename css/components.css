@@ -448,3 +448,242 @@
   font-weight: bold;
   font-style: monospace;
 }
+
+.behind-section {
+  width: 100%;
+  max-width: 900px;
+  font-family: monospace;
+  align-self: flex-start;
+}
+
+#BE {
+  color: rgb(66, 175, 162);
+  font-weight: bold;
+  font-style: monospace;
+}
+
+#be {
+  color: white;
+  font-weight: bold;
+  font-style: monospace;
+}
+
+.BE_desc {
+  text-decoration: none;
+  font-size: 15.5px;
+  color: rgb(128, 126, 126);
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.li_BE {
+  margin-bottom: 16px;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 900px;
+  font-family: monospace;
+  align-self: flex-start;
+}
+
+#KON {
+  color: rgb(66, 175, 162);
+  font-weight: bold;
+}
+
+#kon {
+  color:  rgb(66, 175, 162);
+  font-weight: bold;
+}
+
+.contact-section h2 {
+  color: white;
+  margin: 8px 0 24px 0;
+}
+
+.contact-box {
+  max-width: 640px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.c-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.c-row label {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.c-row input,
+.c-row textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0d1117;
+  color: #ffffff;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.c-row input:focus,
+.c-row textarea:focus {
+  outline: none;
+  border-color: orange;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.c-status {
+  font-size: 13px;
+  color: #4ccdbd;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    width: 90%;
+    max-width: 450px;
+    align-self: center;
+  }
+}
+
+.debug-game-card {
+  width: 100%;
+  margin-top: 24px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.debug-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+.debug-stat strong {
+  color: orange;
+  font-weight: bold;
+}
+
+.debug-stage {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background-color: #0b0e14;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.debug-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(11, 14, 20, 0.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  gap: 14px;
+  z-index: 2;
+}
+
+.debug-overlay.is-hidden {
+  display: none;
+}
+
+.debug-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  font-weight: bold;
+  color: orange;
+}
+
+.debug-subtext {
+  max-width: 380px;
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #9da7b3;
+}
+
+.debug-btn {
+  margin-top: 4px;
+  padding: 11px 22px;
+  background-color: orange;
+  color: #0b0e14;
+  border: none;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.12s ease;
+}
+
+.debug-btn:hover {
+  background-color: #ffb338;
+  transform: translateY(-1px);
+}
+
+.debug-accent-num {
+  color: #4ccdbd;
+  font-weight: bold;
+}
+
+.debug-target {
+  position: absolute;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(0 0 8px rgba(255, 92, 66, 0.45));
+  transition: transform 0.1s ease, filter 0.12s ease;
+}
+
+.debug-target svg {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+.debug-target:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  filter: drop-shadow(0 0 12px rgba(255, 165, 0, 0.75));
+}
+
+.db {
+color:  orange;
+}

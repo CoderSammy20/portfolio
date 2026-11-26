@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your IDEA, made REAL.</title>
+  <meta name="description" content="SamTech · Company: Webseiten, Software und digitale Lösungen – aus Ihrer Idee wird Wirklichkeit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="com.css">
+</head>
+<body>
+  <div id="top"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-title">
+          <span class="brand-sam">Sam</span><span class="brand-tech">Tech</span>
+        </span>
+        <span class="brand-sub">Company</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="nav" aria-label="Hauptnavigation">
+          <ul class="nav-list">
+            <li><a href="#angebote">Angebote</a></li>
+            <li><a href="#neues">Neues</a></li>
+            <li><a href="#unternehmen">Unternehmen</a></li>
+            <li><a href="#karriere">Karriere</a></li>
+            <li><a href="#impressum">Impressum</a></li>
+          </ul>
+        </nav>
+
+        <form class="search-box" role="search" onsubmit="return false;">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Suchen ..."
+            aria-label="Seite durchsuchen"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="hero-dot" aria-hidden="true"></span>
+          <span>Digitale Lösungen · made with care</span>
+        </div>
+
+        <h1 id="hero-title" class="hero-title">
+          Your <span class="word-idea">IDEA</span>,<br>
+          made <span class="word-real">REAL</span>.
+        </h1>
+
+        <p class="hero-lead">
+          SamTech begleitet Sie von der ersten Skizze bis zum fertigen Produkt – mit Webseiten, Software und smarten Werkzeugen, die verständlich, verlässlich und fair kalkuliert sind.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#angebote" class="btn btn-primary">Angebote ansehen →</a>
+          <a href="#kontakt" class="btn btn-secondary">Kontakt aufnehmen</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div class="stat-item">
+            <dt class="stat-value">1:1</dt>
+            <dd class="stat-label">persönliche Betreuung</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-value">Festpreis</dt>
+            <dd class="stat-label">transparent &amp; planbar</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-value">2026</dt>
+            <dd class="stat-label">frisch gestartet</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-accent"></span>
+    </div>
+
+    <section id="angebote" class="angebote">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-eyebrow">Angebote</span>
+          <h2 class="section-title">Leistungen &amp; Preise</h2>
+          <p class="section-lead">
+            Klare Pakete statt Kleingedrucktes. Jedes Angebot lässt sich individuell auf Ihr Projekt abstimmen.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="price-icon" aria-hidden="true">🌐</div>
+            <h3 class="price-title">Webseite Starter</h3>
+            <p class="price-desc">Schlanke One-Page-Seite für Ihr Projekt, Ihr Angebot oder den ersten Auftritt.</p>
+            <div class="price-amount">
+              <span class="price-prefix">ab</span>
+              <span class="price-value">150 €</span>
+              <span class="price-unit">einmalig</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Responsives Design</li>
+              <li>✓ Kontaktformular</li>
+              <li>✓ Saubere Grundstruktur</li>
+            </ul>
+          </article>
+
+          <article class="price-card is-featured">
+            <span class="price-badge">Beliebt</span>
+            <div class="price-icon" aria-hidden="true">🚀</div>
+            <h3 class="price-title">Webseite Business</h3>
+            <p class="price-desc">Mehrseitiger Auftritt mit Animationen, klaren Sektionen und individuellem Look.</p>
+            <div class="price-amount">
+              <span class="price-prefix">ab</span>
+              <span class="price-value">300 €</span>
+              <span class="price-unit">einmalig</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Mehrere Bereiche &amp; Sektionen</li>
+              <li>✓ Sanfte Scroll-Animationen</li>
+              <li>✓ Performance-Optimierung</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <div class="price-icon" aria-hidden="true">⚙️</div>
+            <h3 class="price-title">Software &amp; Tools</h3>
+            <p class="price-desc">Individuelle Skripte, Bots, kleine Web-Tools und praxisnahe Automatisierungen.</p>
+            <div class="price-amount">
+              <span class="price-prefix">ab</span>
+              <span class="price-value">65 €</span>
+              <span class="price-unit">pro Stunde</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Persönliche Abstimmung</li>
+              <li>✓ Maßgeschneiderte Lösung</li>
+              <li>✓ Nachvollziehbare Übergabe</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <div class="price-icon" aria-hidden="true">🛡️</div>
+            <h3 class="price-title">Wartung &amp; Updates</h3>
+            <p class="price-desc">Regelmäßige Updates, kleine Anpassungen im laufenden Betrieb und direkter Support.</p>
+            <div class="price-amount">
+              <span class="price-prefix">ab</span>
+              <span class="price-value">29 €</span>
+              <span class="price-unit">pro Monat</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Laufende Pflege &amp; Updates</li>
+              <li>✓ Kleine Text- &amp; Layout-Checks</li>
+              <li>✓ Direkter Ansprechpartner</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="price-note">
+          Alle Preise sind unverbindliche Richtwerte – den genauen Umfang legen wir gemeinsam vorab fest.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-accent"></span>
+    </div>
+
+<section id="neues" class="neues">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">Neues</span>
+      <h2 class="section-title">Aus dem Maschinenraum</h2>
+      <p class="section-lead">
+        Neuheiten, Meilensteine und Einblicke in Büro und Setup.
+      </p>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card">
+        <span class="news-tag is-milestone">Meilenstein</span>
+        <h3 class="news-title">SamTech startet durch</h3>
+        <p class="news-text">
+          Die neue Unternehmensseite ist online – der Startschuss für alles, was kommt.
+        </p>
+        <time class="news-date" datetime="2026-11">Nov. 2026</time>
+      </article>
+
+      <article class="news-card">
+        <span class="news-tag">Neuheit</span>
+        <h3 class="news-title">Neue Wartungspakete</h3>
+        <p class="news-text">
+          Ab sofort gibt es feste Support-Pakete – planbar, fair und ohne Mindestlaufzeit.
+        </p>
+        <time class="news-date" datetime="2026-11">Nov. 2026</time>
+      </article>
+
+      <article class="news-card">
+        <span class="news-tag">Karriere</span>
+        <h3 class="news-title">Initiativbewerbungen</h3>
+        <p class="news-text">
+          Derzeit sind ausschließlich Initiativbewerbungen möglich – senden Sie uns gerne eine Nachricht!
+        </p>
+        <time class="news-date" datetime="2026-11">Nov. 2026</time>
+      </article>
+
+      <article class="news-card">
+        <span class="news-tag">Neuheit</span>
+        <h3 class="news-title">Neue kontaktmöglichkeiten</h3>
+        <p class="news-text">
+          SamTech ist ab sofort auch über WhatsApp erreichbar – einfach die Nummer aus dem Impressum anschreiben!
+        </p>
+        <time class="news-date" datetime="2026-11">Nov. 2026</time>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-accent"></span>
+    </div>
+
+<section id="unternehmen" class="unternehmen">
+  <div class="section-inner">
+    <div class="company-grid">
+      <div class="company-story">
+        <span class="section-eyebrow">Unternehmen</span>
+        <h2 class="section-title">Unsere Story</h2>
+        <p class="company-text">
+          SamTech ist aus einer einfachen Überzeugung entstanden: Gute Ideen scheitern selten am Willen, sondern an der Umsetzung. Genau dort setzen wir an – als kleines, wendiges Team, das zuhört, mitdenkt und liefert.
+        </p>
+        <p class="company-text">
+          Wir bauen digitale Produkte, die verständlich sind, schnell laden und lange halten. Dabei bleiben wir ansprechbar, ehrlich in der Kommunikation und fair in der Kalkulation.
+        </p>
+      </div>
+
+      <div class="company-values">
+        <article class="value-card">
+          <div class="value-icon" aria-hidden="true">🤝</div>
+          <div class="value-body">
+            <h3 class="value-title">Vertrauen</h3>
+            <p class="value-text">Offene Absprachen, feste Preise, keine Überraschungen.</p>
+          </div>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon" aria-hidden="true">✨</div>
+          <div class="value-body">
+            <h3 class="value-title">Klarheit</h3>
+            <p class="value-text">Einfache Lösungen statt unnötiger Komplexität.</p>
+          </div>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon" aria-hidden="true">⚡</div>
+          <div class="value-body">
+            <h3 class="value-title">Tempo</h3>
+            <p class="value-text">Schnell zum ersten Ergebnis, dann gemeinsam verfeinern.</p>
+          </div>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon" aria-hidden="true">🌱</div>
+          <div class="value-body">
+            <h3 class="value-title">Wachstum</h3>
+            <p class="value-text">Wir lernen ständig dazu – und Ihr Projekt wächst mit.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-accent"></span>
+    </div>
+
+    <section id="karriere" class="karriere">
+  <div class="section-inner">
+    <div class="career-box">
+      <div class="career-main">
+        <span class="career-badge">Aktuell keine offenen Stellen</span>
+        <h2 class="section-title career-title">Karriere bei SamTech</h2>
+        <p class="career-lead">
+          Im Moment suchen wir niemanden aktiv – aber wir lernen gern Menschen kennen, die Technik, Design oder Kundenkontakt mit Leidenschaft leben. Initiativbewerbungen sind ausdrücklich willkommen.
+        </p>
+        <a
+          href="mailto:info@sam-tech.tech?subject=Initiativbewerbung%20bei%20SamTech"
+          class="btn btn-primary"
+        >
+          Initiativ bewerben →
+        </a>
+      </div>
+
+      <div class="career-side">
+        <aside class="career-checklist" aria-label="Das gehört in Ihre Bewerbung">
+          <h3 class="career-side-title">Das gehört in Ihre Bewerbung</h3>
+          <ul class="career-checklist-items">
+            <li>✓ Kurzvorstellung</li>
+            <li>✓ Lebenslauf oder Portfolio</li>
+            <li>✓ Ihr Wunschbereich</li>
+          </ul>
+        </aside>
+
+        <aside class="career-benefits" aria-label="Das erwartet Sie bei SamTech">
+          <h3 class="career-side-title">Das erwartet Sie bei uns</h3>
+          <ul class="career-benefits-list">
+            <li>
+              <span class="benefit-dot" aria-hidden="true">🕒</span>
+              <span>Flexible Arbeitszeiten</span>
+            </li>
+            <li>
+              <span class="benefit-dot" aria-hidden="true">🚀</span>
+              <span>Junges Team</span>
+            </li>
+            <li>
+              <span class="benefit-dot" aria-hidden="true">💬</span>
+              <span>Kommunikation auf Augenhöhe</span>
+            </li>
+            <li>
+              <span class="benefit-dot" aria-hidden="true">🎉</span>
+              <span>Team-Events</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+     <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-accent"></span>
+    </div>
+
+<section id="impressum" class="impressum">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">Impressum</span>
+      <h2 class="section-title">Angaben gemäß § 5 DDG</h2>
+    </div>
+
+    <div class="imprint-grid">
+      <div class="imprint-block">
+        <h3 class="imprint-heading">Anbieter</h3>
+        <p class="imprint-text">
+          SamTech<br>
+          Samuel Rünker<br>
+          Tulpenweg 1a<br>
+          48361 Beelen, Deutschland
+        </p>
+      </div>
+
+      <div class="imprint-block">
+        <h3 class="imprint-heading">Kontakt</h3>
+        <p class="imprint-text">
+          E-Mail: <a href="mailto:kontakt@sam-tech.tech" class="imprint-link">info@sam-tech.tech</a><br>
+          Telefon: +491777375370 <br>
+          USt-IdNr.: DE463907360
+        </p>
+      </div>
+    </div>
+
+    <div class="imprint-bottom">
+      <p class="imprint-copy">© 2026 SamTech. Alle Rechte vorbehalten.</p>
+      <a href="#top" class="back-to-top">Nach oben ↑</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <script>
+    const progressBar = document.getElementById('scrollProgressBar');
+
+    function updateScrollProgress() {
+      if (!progressBar) return;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? Math.min(Math.max(scrollTop / docHeight, 0), 1) : 0;
+      progressBar.style.transform = `scaleX(${progress})`;
+    }
+
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+    window.addEventListener('resize', updateScrollProgress, { passive: true });
+    updateScrollProgress();
+  </script>
+</body>
+</html>

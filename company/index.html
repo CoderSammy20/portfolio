@@ -33,13 +33,14 @@
           </ul>
         </nav>
 
-        <form class="search-box" role="search" onsubmit="return false;">
+        <form class="search-box" id="searchForm" role="search">
           <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
             <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
             <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>
           <input
             type="search"
+            id="searchInput"
             class="search-input"
             placeholder="Suchen ..."
             aria-label="Seite durchsuchen"
@@ -72,7 +73,7 @@
 
         <div class="hero-actions">
           <a href="#angebote" class="btn btn-primary">Angebote ansehen →</a>
-          <a href="#kontakt" class="btn btn-secondary">Kontakt aufnehmen</a>
+          <a href="#impressum" class="btn btn-secondary">Kontakt aufnehmen</a>
         </div>
 
         <dl class="hero-stats">
@@ -183,210 +184,210 @@
       <span class="section-divider-accent"></span>
     </div>
 
-<section id="neues" class="neues">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-eyebrow">Neues</span>
-      <h2 class="section-title">Aus dem Maschinenraum</h2>
-      <p class="section-lead">
-        Neuheiten, Meilensteine und Einblicke in Büro und Setup.
-      </p>
-    </div>
+    <section id="neues" class="neues">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-eyebrow">Neues</span>
+          <h2 class="section-title">Aus dem Maschinenraum</h2>
+          <p class="section-lead">
+            Neuheiten, Meilensteine und Einblicke in Büro und Setup.
+          </p>
+        </div>
 
-    <div class="news-grid">
-      <article class="news-card">
-        <span class="news-tag is-milestone">Meilenstein</span>
-        <h3 class="news-title">SamTech startet durch</h3>
-        <p class="news-text">
-          Die neue Unternehmensseite ist online – der Startschuss für alles, was kommt.
-        </p>
-        <time class="news-date" datetime="2026-11">Nov. 2026</time>
-      </article>
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="news-tag is-milestone">Meilenstein</span>
+            <h3 class="news-title">SamTech startet durch</h3>
+            <p class="news-text">
+              Die neue Unternehmensseite ist online – der Startschuss für alles, was kommt.
+            </p>
+            <time class="news-date" datetime="2026-11">Nov. 2026</time>
+          </article>
 
-      <article class="news-card">
-        <span class="news-tag">Neuheit</span>
-        <h3 class="news-title">Neue Wartungspakete</h3>
-        <p class="news-text">
-          Ab sofort gibt es feste Support-Pakete – planbar, fair und ohne Mindestlaufzeit.
-        </p>
-        <time class="news-date" datetime="2026-11">Nov. 2026</time>
-      </article>
+          <article class="news-card">
+            <span class="news-tag">Neuheit</span>
+            <h3 class="news-title">Neue Wartungspakete</h3>
+            <p class="news-text">
+              Ab sofort gibt es feste Support-Pakete – planbar, fair und ohne Mindestlaufzeit.
+            </p>
+            <time class="news-date" datetime="2026-11">Nov. 2026</time>
+          </article>
 
-      <article class="news-card">
-        <span class="news-tag">Karriere</span>
-        <h3 class="news-title">Initiativbewerbungen</h3>
-        <p class="news-text">
-          Derzeit sind ausschließlich Initiativbewerbungen möglich – senden Sie uns gerne eine Nachricht!
-        </p>
-        <time class="news-date" datetime="2026-11">Nov. 2026</time>
-      </article>
+          <article class="news-card">
+            <span class="news-tag">Karriere</span>
+            <h3 class="news-title">Initiativbewerbungen</h3>
+            <p class="news-text">
+              Derzeit sind ausschließlich Initiativbewerbungen möglich – senden Sie uns gerne eine Nachricht!
+            </p>
+            <time class="news-date" datetime="2026-11">Nov. 2026</time>
+          </article>
 
-      <article class="news-card">
-        <span class="news-tag">Neuheit</span>
-        <h3 class="news-title">Neue kontaktmöglichkeiten</h3>
-        <p class="news-text">
-          SamTech ist ab sofort auch über WhatsApp erreichbar – einfach die Nummer aus dem Impressum anschreiben!
-        </p>
-        <time class="news-date" datetime="2026-11">Nov. 2026</time>
-      </article>
-    </div>
-  </div>
-</section>
+          <article class="news-card">
+            <span class="news-tag">Neuheit</span>
+            <h3 class="news-title">Neue Kontaktmöglichkeiten</h3>
+            <p class="news-text">
+              SamTech ist ab sofort auch über WhatsApp erreichbar – einfach die Nummer aus dem Impressum anschreiben!
+            </p>
+            <time class="news-date" datetime="2026-11">Nov. 2026</time>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <div class="section-divider" aria-hidden="true">
       <span class="section-divider-accent"></span>
     </div>
 
-<section id="unternehmen" class="unternehmen">
-  <div class="section-inner">
-    <div class="company-grid">
-      <div class="company-story">
-        <span class="section-eyebrow">Unternehmen</span>
-        <h2 class="section-title">Unsere Story</h2>
-        <p class="company-text">
-          SamTech ist aus einer einfachen Überzeugung entstanden: Gute Ideen scheitern selten am Willen, sondern an der Umsetzung. Genau dort setzen wir an – als kleines, wendiges Team, das zuhört, mitdenkt und liefert.
-        </p>
-        <p class="company-text">
-          Wir bauen digitale Produkte, die verständlich sind, schnell laden und lange halten. Dabei bleiben wir ansprechbar, ehrlich in der Kommunikation und fair in der Kalkulation.
-        </p>
+    <section id="unternehmen" class="unternehmen">
+      <div class="section-inner">
+        <div class="company-grid">
+          <div class="company-story">
+            <span class="section-eyebrow">Unternehmen</span>
+            <h2 class="section-title">Unsere Story</h2>
+            <p class="company-text">
+              SamTech ist aus einer einfachen Überzeugung entstanden: Gute Ideen scheitern selten am Willen, sondern an der Umsetzung. Genau dort setzen wir an – als kleines, wendiges Team, das zuhört, mitdenkt und liefert.
+            </p>
+            <p class="company-text">
+              Wir bauen digitale Produkte, die verständlich sind, schnell laden und lange halten. Dabei bleiben wir ansprechbar, ehrlich in der Kommunikation und fair in der Kalkulation.
+            </p>
+          </div>
+
+          <div class="company-values">
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">🤝</div>
+              <div class="value-body">
+                <h3 class="value-title">Vertrauen</h3>
+                <p class="value-text">Offene Absprachen, feste Preise, keine Überraschungen.</p>
+              </div>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">✨</div>
+              <div class="value-body">
+                <h3 class="value-title">Klarheit</h3>
+                <p class="value-text">Einfache Lösungen statt unnötiger Komplexität.</p>
+              </div>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">⚡</div>
+              <div class="value-body">
+                <h3 class="value-title">Tempo</h3>
+                <p class="value-text">Schnell zum ersten Ergebnis, dann gemeinsam verfeinern.</p>
+              </div>
+            </article>
+
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">🌱</div>
+              <div class="value-body">
+                <h3 class="value-title">Wachstum</h3>
+                <p class="value-text">Wir lernen ständig dazu – und Ihr Projekt wächst mit.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-
-      <div class="company-values">
-        <article class="value-card">
-          <div class="value-icon" aria-hidden="true">🤝</div>
-          <div class="value-body">
-            <h3 class="value-title">Vertrauen</h3>
-            <p class="value-text">Offene Absprachen, feste Preise, keine Überraschungen.</p>
-          </div>
-        </article>
-
-        <article class="value-card">
-          <div class="value-icon" aria-hidden="true">✨</div>
-          <div class="value-body">
-            <h3 class="value-title">Klarheit</h3>
-            <p class="value-text">Einfache Lösungen statt unnötiger Komplexität.</p>
-          </div>
-        </article>
-
-        <article class="value-card">
-          <div class="value-icon" aria-hidden="true">⚡</div>
-          <div class="value-body">
-            <h3 class="value-title">Tempo</h3>
-            <p class="value-text">Schnell zum ersten Ergebnis, dann gemeinsam verfeinern.</p>
-          </div>
-        </article>
-
-        <article class="value-card">
-          <div class="value-icon" aria-hidden="true">🌱</div>
-          <div class="value-body">
-            <h3 class="value-title">Wachstum</h3>
-            <p class="value-text">Wir lernen ständig dazu – und Ihr Projekt wächst mit.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <div class="section-divider" aria-hidden="true">
       <span class="section-divider-accent"></span>
     </div>
 
     <section id="karriere" class="karriere">
-  <div class="section-inner">
-    <div class="career-box">
-      <div class="career-main">
-        <span class="career-badge">Aktuell keine offenen Stellen</span>
-        <h2 class="section-title career-title">Karriere bei SamTech</h2>
-        <p class="career-lead">
-          Im Moment suchen wir niemanden aktiv – aber wir lernen gern Menschen kennen, die Technik, Design oder Kundenkontakt mit Leidenschaft leben. Initiativbewerbungen sind ausdrücklich willkommen.
-        </p>
-        <a
-          href="mailto:info@sam-tech.tech?subject=Initiativbewerbung%20bei%20SamTech"
-          class="btn btn-primary"
-        >
-          Initiativ bewerben →
-        </a>
+      <div class="section-inner">
+        <div class="career-box">
+          <div class="career-main">
+            <span class="career-badge">Aktuell keine offenen Stellen</span>
+            <h2 class="section-title career-title">Karriere bei SamTech</h2>
+            <p class="career-lead">
+              Im Moment suchen wir niemanden aktiv – aber wir lernen gern Menschen kennen, die Technik, Design oder Kundenkontakt mit Leidenschaft leben. Initiativbewerbungen sind ausdrücklich willkommen.
+            </p>
+            <a
+              href="mailto:info@sam-tech.tech?subject=Initiativbewerbung%20bei%20SamTech"
+              class="btn btn-primary"
+            >
+              Initiativ bewerben →
+            </a>
+          </div>
+
+          <div class="career-side">
+            <aside class="career-checklist" aria-label="Das gehört in Ihre Bewerbung">
+              <h3 class="career-side-title">Das gehört in Ihre Bewerbung</h3>
+              <ul class="career-checklist-items">
+                <li>✓ Kurzvorstellung</li>
+                <li>✓ Lebenslauf oder Portfolio</li>
+                <li>✓ Ihr Wunschbereich</li>
+              </ul>
+            </aside>
+
+            <aside class="career-benefits" aria-label="Das erwartet Sie bei SamTech">
+              <h3 class="career-side-title">Das erwartet Sie bei uns</h3>
+              <ul class="career-benefits-list">
+                <li>
+                  <span class="benefit-dot" aria-hidden="true">🕒</span>
+                  <span>Flexible Arbeitszeiten</span>
+                </li>
+                <li>
+                  <span class="benefit-dot" aria-hidden="true">🚀</span>
+                  <span>Junges Team</span>
+                </li>
+                <li>
+                  <span class="benefit-dot" aria-hidden="true">💬</span>
+                  <span>Kommunikation auf Augenhöhe</span>
+                </li>
+                <li>
+                  <span class="benefit-dot" aria-hidden="true">🎉</span>
+                  <span>Team-Events</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="career-side">
-        <aside class="career-checklist" aria-label="Das gehört in Ihre Bewerbung">
-          <h3 class="career-side-title">Das gehört in Ihre Bewerbung</h3>
-          <ul class="career-checklist-items">
-            <li>✓ Kurzvorstellung</li>
-            <li>✓ Lebenslauf oder Portfolio</li>
-            <li>✓ Ihr Wunschbereich</li>
-          </ul>
-        </aside>
-
-        <aside class="career-benefits" aria-label="Das erwartet Sie bei SamTech">
-          <h3 class="career-side-title">Das erwartet Sie bei uns</h3>
-          <ul class="career-benefits-list">
-            <li>
-              <span class="benefit-dot" aria-hidden="true">🕒</span>
-              <span>Flexible Arbeitszeiten</span>
-            </li>
-            <li>
-              <span class="benefit-dot" aria-hidden="true">🚀</span>
-              <span>Junges Team</span>
-            </li>
-            <li>
-              <span class="benefit-dot" aria-hidden="true">💬</span>
-              <span>Kommunikation auf Augenhöhe</span>
-            </li>
-            <li>
-              <span class="benefit-dot" aria-hidden="true">🎉</span>
-              <span>Team-Events</span>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </div>
-</section>
-
-     <div class="section-divider" aria-hidden="true">
+    <div class="section-divider" aria-hidden="true">
       <span class="section-divider-accent"></span>
     </div>
 
-<section id="impressum" class="impressum">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-eyebrow">Impressum</span>
-      <h2 class="section-title">Angaben gemäß § 5 DDG</h2>
-    </div>
+    <section id="impressum" class="impressum">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-eyebrow">Impressum</span>
+          <h2 class="section-title">Angaben gemäß § 5 DDG</h2>
+        </div>
 
-    <div class="imprint-grid">
-      <div class="imprint-block">
-        <h3 class="imprint-heading">Anbieter</h3>
-        <p class="imprint-text">
-          SamTech<br>
-          Samuel Rünker<br>
-          Tulpenweg 1a<br>
-          48361 Beelen, Deutschland
-        </p>
+        <div class="imprint-grid">
+          <div class="imprint-block">
+            <h3 class="imprint-heading">Anbieter</h3>
+            <p class="imprint-text">
+              SamTech<br>
+              Samuel Rünker<br>
+              Tulpenweg 1a<br>
+              48361 Beelen, Deutschland
+            </p>
+          </div>
+
+          <div class="imprint-block">
+            <h3 class="imprint-heading">Kontakt</h3>
+            <p class="imprint-text">
+              E-Mail: <a href="mailto:info@sam-tech.tech" class="imprint-link">info@sam-tech.tech</a><br>
+              Telefon: +491777375370<br>
+              USt-IdNr.: DE463907360
+            </p>
+          </div>
+        </div>
+
+        <div class="imprint-bottom">
+          <p class="imprint-copy">© 2026 SamTech. Alle Rechte vorbehalten.</p>
+          <a href="#top" class="back-to-top">Nach oben ↑</a>
+        </div>
       </div>
-
-      <div class="imprint-block">
-        <h3 class="imprint-heading">Kontakt</h3>
-        <p class="imprint-text">
-          E-Mail: <a href="mailto:kontakt@sam-tech.tech" class="imprint-link">info@sam-tech.tech</a><br>
-          Telefon: +491777375370 <br>
-          USt-IdNr.: DE463907360
-        </p>
-      </div>
-    </div>
-
-    <div class="imprint-bottom">
-      <p class="imprint-copy">© 2026 SamTech. Alle Rechte vorbehalten.</p>
-      <a href="#top" class="back-to-top">Nach oben ↑</a>
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <script>
+    // 1. Scroll-Fortschrittsbalken
     const progressBar = document.getElementById('scrollProgressBar');
 
     function updateScrollProgress() {
@@ -400,6 +401,55 @@
     window.addEventListener('scroll', updateScrollProgress, { passive: true });
     window.addEventListener('resize', updateScrollProgress, { passive: true });
     updateScrollProgress();
+
+    // 2. Seiten-Suche
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+
+    const searchRoutes = [
+      { target: '#angebote', keywords: ['angebot', 'preis', 'kosten', 'webseite', 'website', 'software', 'bot', 'wartung', 'paket', 'euro', '€'] },
+      { target: '#neues', keywords: ['neu', 'news', 'update', 'meilenstein', 'whatsapp', 'maschinenraum'] },
+      { target: '#unternehmen', keywords: ['unternehmen', 'story', 'über', 'team', 'werte', 'vertrauen', 'samtech'] },
+      { target: '#karriere', keywords: ['karriere', 'job', 'bewerbung', 'bewerben', 'initiativ', 'arbeit', 'stelle', 'lebenslauf'] },
+      { target: '#impressum', keywords: ['kontakt', 'impressum', 'email', 'mail', 'telefon', 'nummer', 'adresse', 'ust', 'inhaber'] }
+    ];
+
+    if (searchForm && searchInput) {
+      searchForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) return;
+
+        const matchedRoute = searchRoutes.find((route) =>
+          route.keywords.some((word) => query.includes(word))
+        );
+
+        let targetEl = matchedRoute ? document.querySelector(matchedRoute.target) : null;
+
+        if (!targetEl) {
+          const sections = document.querySelectorAll('main section[id]');
+          for (const section of sections) {
+            if (section.textContent.toLowerCase().includes(query)) {
+              targetEl = section;
+              break;
+            }
+          }
+        }
+
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          targetEl.classList.add('search-highlight');
+          setTimeout(() => targetEl.classList.remove('search-highlight'), 1800);
+          searchInput.blur();
+        } else {
+          searchInput.value = '';
+          searchInput.placeholder = 'Nichts gefunden ...';
+          setTimeout(() => {
+            searchInput.placeholder = 'Suchen ...';
+          }, 1800);
+        }
+      });
+    }
   </script>
 </body>
 </html>

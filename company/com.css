@@ -931,3 +931,10 @@ body {
     align-items: flex-start;
   }
 }
+
+.search-highlight {
+  outline: 2px solid #2563eb;
+  outline-offset: 8px;
+  border-radius: 14px;
+  transition: outline-color 0.3s ease;
+}

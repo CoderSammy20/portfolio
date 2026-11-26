@@ -1,9 +1,13 @@
 (() => {
+  const LEADERBOARD_URL = "https://samtech-access-api.codersammy.workers.dev/leaderboard";
+
   const stage = document.getElementById("debug-stage");
   const overlay = document.getElementById("debug-overlay");
   const headingEl = document.getElementById("debug-overlay-heading");
   const textEl = document.getElementById("debug-overlay-text");
   const startBtn = document.getElementById("debug-start-btn");
+  const nicknameInput = document.getElementById("debug-nickname-input");
+  const leaderboardListEl = document.getElementById("debug-leaderboard-list");
   const timeEl = document.getElementById("debug-time");
   const fixedEl = document.getElementById("debug-fixed");
 
@@ -219,6 +223,59 @@
     musicTimerId = null;
   }
 
+  // --- Leaderboard ---
+  let currentPlayerName = "Gast";
+
+  function renderLeaderboard(entries) {
+    if (!leaderboardListEl) return;
+    leaderboardListEl.innerHTML = "";
+
+    if (!Array.isArray(entries) || entries.length === 0) {
+      const emptyItem = document.createElement("li");
+      emptyItem.textContent = "Noch keine Scores eingetragen.";
+      leaderboardListEl.appendChild(emptyItem);
+      return;
+    }
+
+    entries.slice(0, 10).forEach((entry, index) => {
+      const li = document.createElement("li");
+      const playerName = typeof entry.name === "string" && entry.name.trim() ? entry.name.trim() : "Gast";
+      const playerScore = Number.isFinite(Number(entry.score)) ? Math.floor(Number(entry.score)) : 0;
+      li.textContent = `${playerName} — ${playerScore} Bugs`;
+      leaderboardListEl.appendChild(li);
+    });
+  }
+
+  async function fetchLeaderboard() {
+    if (!leaderboardListEl) return;
+    try {
+      const res = await fetch(LEADERBOARD_URL);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      renderLeaderboard(data);
+    } catch (err) {
+      leaderboardListEl.innerHTML = "";
+      const errItem = document.createElement("li");
+      errItem.textContent = "Bestenliste gerade nicht erreichbar.";
+      leaderboardListEl.appendChild(errItem);
+    }
+  }
+
+  async function submitScore(name, score) {
+    try {
+      const res = await fetch(LEADERBOARD_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, score }),
+      });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const updatedTop10 = await res.json();
+      renderLeaderboard(updatedTop10);
+    } catch (err) {
+      // Fehler beim Senden sollen die Endanzeige nicht blockieren
+    }
+  }
+
   // --- Game State ---
   let timeLeft = ROUND_SECONDS;
   let fixedCount = 0;
@@ -320,6 +377,14 @@
   }
 
   function startRound() {
+    const typedName = nicknameInput ? nicknameInput.value.trim().slice(0, 16) : "";
+    currentPlayerName = typedName || "Gast";
+    if (nicknameInput && typedName) {
+      try {
+        localStorage.setItem("debug_break_nick", typedName);
+      } catch (e) {}
+    }
+
     clearRoundTimers();
     clearTargets();
 
@@ -366,10 +431,20 @@
     }
 
     headingEl.innerHTML = `<span>Zeit um! 🎉</span>`;
-    textEl.innerHTML = `Du hast <span class="debug-accent-num">${fixedCount}</span> Bugs gefixt.`;
+    textEl.innerHTML = `<span class="debug-accent-num">${currentPlayerName}</span> hat <span class="debug-accent-num">${fixedCount}</span> Bugs gefixt.`;
     startBtn.textContent = "Nochmal spielen";
     overlay.classList.remove("is-hidden");
+
+    submitScore(currentPlayerName, fixedCount);
+  }
+
+  if (nicknameInput) {
+    try {
+      const savedNick = localStorage.getItem("debug_break_nick");
+      if (savedNick) nicknameInput.value = savedNick;
+    } catch (e) {}
   }
 
   startBtn.addEventListener("click", startRound);
+  fetchLeaderboard();
 })();

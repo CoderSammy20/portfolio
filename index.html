@@ -225,9 +225,21 @@
               <p id="debug-overlay-text" class="debug-subtext">
                 20 Sekunden Zeit, um so viele Bugs wie möglich wegzuklicken, bevor sie den Code übernehmen.
               </p>
+              <input 
+              type="text"
+              id="debug-nickname-input"
+              class="debug-nickname-input"
+              maxlength="16"
+              placeholder="Nickname...">
               <button type="button" id="debug-start-btn" class="debug-btn">Spiel starten</button>
             </div>
           </div>
+        </div>
+        <div class="debug-leaderboard-card">
+          <div class="debug-leaderboard-title">Top 10 · Debug Break</div>
+          <ol id="debug-leaderboard-list" class="debug-leaderboard-list">
+            <li>Lade Bestenliste...</li>
+          </ol>
         </div>
       </section>
 
@@ -290,4 +302,7 @@
 
     <script src="js/script.js"></script>
   </body>
+ <footer class="site-footer">
+  <p>&copy; 2026 SamTech. All rights reserved.</p>
+</footer>
 </html>

@@ -687,3 +687,69 @@
 .db {
 color:  orange;
 }
+
+.debug-nickname-input {
+  width: 100%;
+  max-width: 240px;
+  padding: 9px 12px;
+  background-color: #0b0e14;
+  color: #ffffff;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 13.5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.debug-nickname-input:focus {
+  outline: none;
+  border-color: orange;
+}
+
+.debug-leaderboard-card {
+  width: 100%;
+  margin-top: 18px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  color: #c9d1d9;
+}
+
+.debug-leaderboard-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #4ccdbd;
+  margin-bottom: 12px;
+}
+
+.debug-leaderboard-list {
+  margin: 0;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #e6edf3;
+}
+
+.debug-leaderboard-list li::marker {
+  color: orange;
+  font-weight: bold;
+}
+
+.site-footer {
+  margin-top: 80px;
+  padding: 24px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  color: #8b949e;
+}
+
+.site-footer p {
+  margin: 0;
+}
